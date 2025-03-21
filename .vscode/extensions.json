@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "shubham-saudolla.lilac",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "github.vscode-pull-request-github",
+        "eamodio.gitlens"
+    ]
+}
