@@ -7,10 +7,12 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node-dev --respawn index.ts"
+    "dev": "ts-node-dev --respawn index.ts",
+    "format": "prettier --write .",
+    "clean": "rm -rf dist"
   },
-  "author": "Google LLC",
-  "license": "Apache-2.0",
+  "author": "asmtilde",
+  "license": "GPL-3.0",
   "dependencies": {
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "bcrypt": "^5.1.1",
@@ -21,6 +23,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.12.1",
     "node-fetch": "^3.3.2",
+    "prettier": "^3.5.3",
     "profane-words": "^1.6.0",
     "svelte": "^5.24.1",
     "vite": "^6.2.2"

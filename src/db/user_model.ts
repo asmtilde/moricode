@@ -6,25 +6,25 @@ const UserSchema = new mongoose.Schema({
         unique: true,
         collation: {
             locale: 'en',
-            strength: 2
+            strength: 2,
         },
         required: true,
-        maxLength: 20
+        maxLength: 20,
     },
     password: {
         type: String,
         required: true,
-        minLength: 8
+        minLength: 8,
     },
     email: {
         type: String,
         unique: true,
         collation: {
             locale: 'en',
-            strength: 2
+            strength: 2,
         },
         required: true,
-        maxLength: 254
+        maxLength: 254,
     },
     avatar: {
         type: String,
@@ -34,18 +34,18 @@ const UserSchema = new mongoose.Schema({
     privaleges: {
         type: Number,
         default: 0,
-        required: true
+        required: true,
     },
     createdAt: {
         type: Date,
         default: Date.now,
-        required: true
+        required: true,
     },
     updatedAt: {
         type: Date,
         default: Date.now,
-        required: true
-    }
+        required: true,
+    },
 });
 
 const User = mongoose.model('User', UserSchema);
