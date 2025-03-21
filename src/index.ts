@@ -1,10 +1,13 @@
-/*
-  ~ src/index.ts
+import express, { Request, Response } from 'express';
+import path from 'path';
 
-  MoriCode WebServer Entry Point
-*/
-import express from 'express';
-import cookieParser from 'cookie-parser';
-import cors from 'cors';
-import * as dotenv from 'dotenv';
+const app = express();
+const port = process.env.PORT || 3000;
 
+app.get('/api/hw', (req: Request, res: Response) => {
+  res.json({ message: 'Hello, World!' });
+});
+
+app.listen(port, () => {
+  console.log(`Server listening on ${port}`);
+});

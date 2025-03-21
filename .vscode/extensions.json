@@ -6,6 +6,7 @@
         "ms-python.python",
         "ms-python.vscode-pylance",
         "github.vscode-pull-request-github",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "svelte.svelte-vscode"
     ]
 }
